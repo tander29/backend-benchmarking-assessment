@@ -1,7 +1,7 @@
 # Assessment: I don't have time for this
 
 Imagine that you've been working on this program on a team of developers. You've
-done all the right things up until now, including writing [doctests](https://docs.python.org/2.7/library/doctest.html)[1] 
+done all the right things up until now, including writing [doctests](https://docs.python.org/2.7/library/doctest.html)[1]
 and [unitests](tests/test_anagrams.py).
 
 Unfortunately, a previous teammate not only committed code that made the
@@ -17,6 +17,7 @@ lesson to pin down the problem. Using a debugger may also help you to get a
 handle on exactly _why_ things are slow.
 
 ## Skipped unit test
+
 If you look at the test case, you'll notice that the `test_long` unit test is
 currently being skipped. That's because if it were to run with the current
 implementation of `find_anagrams` it would take several minutes to complete. We
@@ -25,8 +26,10 @@ suggest that you try and get the `test_short` to pass first, then remove the
 
 Good luck!
 
-
 [1] You can run the doctests with the following command:
+
 ```console
 foo@bar:~ $ python2 -m doctest -v anagrams.py words/short.txt
 ```
+
+To test the actual speed run the actual unittest rerun "python -m unittest discover"
